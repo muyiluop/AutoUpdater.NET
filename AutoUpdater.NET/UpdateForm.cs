@@ -16,6 +16,7 @@ internal sealed partial class UpdateForm : Form
         _args = args;
         InitializeComponent();
         TopMost = AutoUpdater.TopMost;
+        StartPosition = FormStartPosition.CenterParent;
 
         if (AutoUpdater.Icon != null)
         {

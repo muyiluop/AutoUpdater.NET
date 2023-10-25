@@ -28,7 +28,7 @@ internal partial class DownloadUpdateDialog : Form
     {
         InitializeComponent();
         TopMost = AutoUpdater.TopMost;
-
+        StartPosition = FormStartPosition.CenterParent;
         if (AutoUpdater.Icon != null)
         {
             Icon = Icon.FromHandle(AutoUpdater.Icon.GetHicon());
